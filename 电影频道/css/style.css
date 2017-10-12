@@ -1,0 +1,90 @@
+/*global*/
+body {
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+
+/*导航条*/
+.dropdown-menu {
+    min-width: 72px;
+}
+
+.wrap {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*轮播图*/
+.carousel {
+    height: 500px;
+    background-color: #000000;
+}
+
+.carousel .item{
+    height: 520px;
+    background-color: #000000;
+}
+
+.carousel img{
+    width: 100%;
+}
+
+.item div{
+    top: 27%;
+    left: 24%;
+}
+
+.item span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.item h2 {
+    color: #ffffff;
+}
+
+.carousel-control .glyphicon-chevron-right,.carousel-control .glyphicon-chevron-left{
+    font-size: 60px;
+}
+
+.col-md-4 {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.col-md-4 img {
+    width: 100px;
+    height: 120px;
+}
+
+.divider {
+    margin: 60px 0;
+}
+
+.tab-content img {
+    width: 300px;
+    height: auto;
+}
+
+.tab-pane {
+    padding: 50px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: gray;
+}
+
+.tab-pane h1 {
+    color: #286090;
+}
+
+.copy {
+    margin-left: 40%;
+}
+
+/*底部样式*/
+footer a {
+    font-size: 16px;
+    color: mediumblue;
+}

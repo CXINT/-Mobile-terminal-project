@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>电影频道</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--这里是导航条-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="wrap">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">我的电影频道</a>
+            </div>
+            <div class="collapse navbar-collapse" id="demo-navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">最新 <span class="sr-only"></span></a></li>
+                    <li><a href="#recommend">推荐</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">分类
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#love">爱情</a></li>
+                            <li><a href="#science">科幻</a></li>
+                            <li><a href="#suspense">悬疑</a></li>
+                            <li><a href="#cartoon">动画</a></li>
+                            <li><a href="#war">战争</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#statement">声明</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--这里是轮播图-->
+    <div class="wrap">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/摔跤吧爸爸.jpg" alt="摔跤吧爸爸">
+                    <div class="carousel-caption">
+                        <h2>摔跤吧爸爸</h2>
+                        <span>根据真人真事改编，讲述曾经的摔跤冠军辛格培养两个女儿成为女子摔跤冠军，打破印度传统的励志故事。</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/加勒比海盗5.jpg" alt="加勒比海盗5">
+                    <div class="carousel-caption">
+                        <h2>加勒比海盗5</h2>
+                        <span>该片讲述了杰克船长一行人怀揣着各自的目的踏上寻找传说中海神波塞冬的三叉戟的奇幻冒险故事。</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/神奇女侠.jpg" alt="神奇女侠">
+                    <div class="carousel-caption">
+                        <h2>神奇女侠</h2>
+                        <span>该片讲述了亚马逊公主戴安娜·普林斯取得奥林匹斯众神赐予的武器与装备，化身神奇女侠，捍卫和平、拯救世界的故事。</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/新木乃伊.jpg" alt="新木乃伊">
+                    <div class="carousel-caption">
+                        <h2>新木乃伊</h2>
+                       <span> 该片围绕复活的安玛奈特如何将阿汤哥扮演的军人尼克变成埃及死神塞特展开。木乃伊公主阿玛内特穿梭到现代伦敦，企图寻回她曾被夺去的一切。 </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/春娇救志明.jpg" alt="春娇救志明">
+                    <div class="carousel-caption">
+                        <h2>春娇救志明</h2>
+                        <span>该片讲述了余春娇和张志明在一起5年之后，对两个人的未来产生疑惑，经过分手后最终又决定结婚在一起的爱情故事。</span>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">上一页</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">下一页</span>
+            </a>
+        </div>
+    </div>
+    <!--这里是三栏推荐-->
+    <div class="container" id="recommend">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/阿甘正传.jpg" alt="阿甘正传">
+                <h3>阿甘正传</h3>
+                <p>描绘了先天智障的小镇男孩福瑞斯特·甘自强不息，最终“傻人有傻福”，在多个领域创造奇迹的励志故事。</p>
+                <p><a href="http://baike.baidu.com/item/%E9%98%BF%E7%94%98%E6%AD%A3%E4%BC%A0/12696704" target="_blank" class="btn btn-info" role="button">更多信息</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/千与千寻.jpg" alt="千与千寻">
+                <h3>千与千寻</h3>
+                <p>该片是由宫崎骏执导、编剧，吉卜力工作室制作的动画电影，讲述了少女千寻意外来到神灵异世界后发生的故事。</p>
+                <p><a href="http://baike.baidu.com/item/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB" target="_blank" class="btn btn-info" role="button">更多信息</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/入殓师.jpg" alt="入殓师">
+                <h3>入殓师</h3>
+                <p>影片讲述了日本入殓师的生活，影片以一名入殓师新手的视角，凝视围绕在逝者周围的充满爱意的人们。</p>
+                <p><a href="http://baike.baidu.com/item/入殓师/22703" target="_blank" class="btn btn-info" role="button">更多信息</a></p>
+            </div>
+        </div>
+        <hr class="divider" /><!--分隔线-->
+    </div>
+    <!--这里是标签页-->
+    <div class="container">
+        <div>
+            <ul class="nav nav-tabs" role="tablist" id="tab-list">
+                <li role="presentation" class="active"><a href="#love" aria-controls="home" role="tab" data-toggle="tab">爱情</a></li>
+                <li role="presentation"><a href="#science" aria-controls="profile" role="tab" data-toggle="tab">科幻</a></li>
+                <li role="presentation"><a href="#suspense" aria-controls="messages" role="tab" data-toggle="tab">悬疑</a></li>
+                <li role="presentation"><a href="#cartoon" aria-controls="settings" role="tab" data-toggle="tab">动画</a></li>
+                <li role="presentation"><a href="#war" aria-controls="settings" role="tab" data-toggle="tab">战争</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="love">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h1>爱情电影</h1>
+                            <p>爱情电影指的是那些中心剧情主要围绕着故事主角恋爱关系发展的电影。该类电影常见的主题是，电影中的角色们基于相互间新发现的魅力而作出相应的决定。</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/爱情.jpg" alt="爱情">
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="science">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/科幻.jpg" alt="科幻">
+                        </div>
+                        <div class="col-md-7">
+                            <h1>科幻电影</h1>
+                            <p>科幻电影是类型片的一种，该类作品采用科幻元素作为题材，以建立在科学上的幻想性情景为背景，在此基础上展开叙事的影视作品。科幻电影常常使用可能的未来世界作为故事背景，用宇宙飞船、机器人或其他超越时代的科技等元素彰显与现实之间的差异。</p>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="suspense">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h1>悬疑电影</h1>
+                            <p>悬疑电影是指充满悬念，利用电影中人物命运的曲折遭遇、未知的情节的发展变化或者无法看清的结局真相，吸引观众注意力并能引发后续思考和讨论的一种电影类型。</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/悬疑.jpg" alt="悬疑">
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="cartoon">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/动画.jpg" alt="动画">
+                        </div>
+                        <div class="col-md-7">
+                            <h1>动画电影</h1>
+                            <p>动画电影指以动画制作的电影。剧场版电影是动画电影的一个分支。我们所说的动画电影包括剧场版，OVA。从动画剧或OVA取材的称为剧场版或电影动画。</p>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="war">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h1>战争电影</h1>
+                            <p>战争电影以战争史上重大军事行动为题材的影片。以塑造人物形象为主，通过战争事件、战役过程和战斗场面的描写，着重刻画人物的思想性格。</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/战争.jpg" alt="战争">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="divider" />
+    </div>
+    <!--这里是尾部-->
+    <footer>
+        <p class="copy">@2016 - 2017 CXINT</p>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+    </footer>
+    <!--这里是模态框-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="statement">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">声明</h4>
+                </div>
+                <div class="modal-body">
+                    <p>素材部分资源引用自豆瓣与百度百科</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#demo-navbar .dropdown-menu a").click(function () {
+                var href = $(this).attr("href");
+                $("#tab-list a[href='"+href+"']").tab("show");
+            })
+        })
+    </script>
+</body>
+</html>
