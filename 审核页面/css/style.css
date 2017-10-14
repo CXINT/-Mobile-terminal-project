@@ -1,0 +1,15 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+img{
+	width:100%;
+	vertical-align: bottom/*设定图片样式，垂直对齐，解决了图片图片之间含有空隙的情况 2011.07.27 added by Lee.will*/
+}
+p{
+	text-align: center;
+	text-indent:2em;
+}
+.bottom{
+	bottom:0px;
+}
